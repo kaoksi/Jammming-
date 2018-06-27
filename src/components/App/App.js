@@ -57,6 +57,7 @@ class App extends Component {
 
   //67s
   search(term) {
+    console.log(term);
     //87
     Spotify.search(term).then(tracks => {
       this.setState({searchResults: tracks
